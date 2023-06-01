@@ -1,8 +1,5 @@
 from flask import Flask, render_template, request
-import tensorflow as tf
-# import newspreprocessing
-# from tensorflow.keras.preprocessing.text import Tokenizer
-# from tensorflow.keras.preprocessing.sequence import pad_sequences
+import news_preprocessing
 
 app = Flask(__name__)
 
@@ -13,11 +10,6 @@ def home():
 @app.route("/prediction", methods=['POST'])
 def prediction():
     news = request.form['news']
-    # tf.keras.load_model()
-    # preprocessed_news = preprocess(news)
-    # prediction = newspreprocessing.predict(preprocessed_news)
-    # prediction = "Nishant R Shinde"
+    preprocessed_news = news_preprocessing.news_preprocess(news)
+    prediction = news_preprocessing.predict(preprocessed_news)
     return render_template("prediction.html", news=news, predicted_value=prediction)
-
-def preprocess(news):
-    return 

@@ -4,6 +4,7 @@ body{
     background-size: cover;
 }
 .home {
+    font-size: 1.1rem;
     background-color: rgb(100,100,100);
     padding: 4px 6px;
     color: white;
@@ -17,15 +18,21 @@ body{
     background-color: rgb(230, 230, 230);
     border: 2px solid rgb(100,100,100);
     margin: auto;
-    width: 500px;
-    height: 250px;
+    width: 35vw;
+    height: 38vh;
     border-radius: 8px;
     padding: 8px;
+    overflow-y: scroll;
 }
-
-#result {
-    margin:30px 0;
-    font-size: 36px;
+.container {
     text-align: center;
-    color: white
+}
+.result {
+    display: inline-block;
+    margin:40px 0;
+    padding: 4px 12px;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
 }   
