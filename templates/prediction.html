@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/prediction-style.css')}}">
+    </head>
+    <body>
+        <form action="/">
+            <button class="home" type="submit">back to Home</button>
+        </form>
+        
+        <div id="news">{{news}}</div>
+        <div id="result">{{predicted_value}}</div>
+    </body>
+</html>

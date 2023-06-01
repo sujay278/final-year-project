@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://zippypixels.com/wp-content/uploads/2016/03/09-newspaper-psd-advertisement-mockups-824x542.jpg");
+}
+.app-title {
+    font-size: 48px;
+    margin: 38px 0 42px;
+    color: white;
+}
+.main {
+    text-align: center;
+}
+.enter-news {
+    font-size: 28px;
+    color: white;
+}
+textarea {
+    border: 2px solid rgb(100,100,100);
+    background-color: rgb(220, 220, 220);
+    border-radius: 8px;
+    padding: 8px;   
+}
+/* textarea:focus {
+    border-color: green;
+} */
+#submit-button {
+    font-size: 19px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgba(0,0,255,0.8);
+    /* font-weight: 600; */
+    color: white;
+    border: none; 
+}
+#submit-button:hover {
+    background-color: rgba(0,0,255,1);
+    color: rgba(255,255,255,0.9)
+}

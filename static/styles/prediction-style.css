@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("news paper new.jpg");
+    background-size: cover;
+}
+.home {
+    background-color: rgb(100,100,100);
+    padding: 4px 6px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.home:hover {
+    background-color: rgba(70, 70, 70);
+}
+#news {
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(100,100,100);
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#result {
+    margin:30px 0;
+    font-size: 36px;
+    text-align: center;
+    color: white
+}   
