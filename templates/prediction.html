@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="{{url_for('static', filename='styles/prediction-style.css')}}">
         <style>
-        {% if predicted_value == "Real" %}
+        {% if real_fake == "Real" %}
             .new-color {
                 border: 3px solid rgb(81, 179, 81);
             }
@@ -21,8 +21,14 @@
         <div id="news">{{news}}</div>
         <div class="container">
             <div class="result new-color">
-                {{predicted_value}}
+                {{real_fake}}
+            </div><br>
+            <div class="confidence">
+                <div class="confidence-level">Confidence Level:</div>
+                <div style="color: green;">Real: {{"%6.2f"|format(100 - confidence)}}%</div>
+                <div style="color: red;">Fake: {{"%6.2f"|format(confidence)}}%</div>
             </div>
         </div>
+        
     </body>
 </html>

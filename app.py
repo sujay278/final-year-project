@@ -12,4 +12,4 @@ def prediction():
     news = request.form['news']
     preprocessed_news = news_preprocessing.news_preprocess(news)
     prediction = news_preprocessing.predict(preprocessed_news)
-    return render_template("prediction.html", news=news, predicted_value=prediction)
+    return render_template("prediction.html", news=news, real_fake=prediction[0], confidence=prediction[1])

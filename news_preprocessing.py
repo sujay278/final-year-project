@@ -15,7 +15,9 @@ def predict(news):
     loaded_model = tf.keras.saving.load_model(
     'fake-news-model/model.keras', custom_objects=None, compile=True, safe_mode=True)
     value = loaded_model.predict(news)[0][0]
+    # formatted_value = float("{:6.2f}".format(value * 100))
+
     if(value > 0.5):
-        return "Fake"
+        return ["Fake", value*100]
     else:
-        return "Real"
+        return ["Real", value * 100]
